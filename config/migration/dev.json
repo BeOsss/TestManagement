@@ -1,0 +1,11 @@
+{
+    "dev": {
+        "host": "127.0.0.1",
+        "port": "3306",
+        "user": "TestManagement",
+        "password": "DevUser123!#",
+        "database": "test_management",
+        "driver": "mysql"
+    },
+    "sql-file": true
+}
