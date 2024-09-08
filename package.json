@@ -5,24 +5,25 @@
   "main": "index.js",
   "scripts": {
     "test": "start",
-    "start": "npx rollup -c ./config/rollup/index_roll_up.config.mjs & nodemon ./bundle/app_index.js",
+    "": "npx rollup -c ./config/rollup/index_roll_up.config.mjs & nodemon ./public/app.js",
+    "start": "nodemon ./src/index.js",
     "migration": "npx db-migrate up --config ./config/migration/dev.json"
   },
-  "type": "commonjs",
+  "type": "module",
   "author": "Tran Anh Khoa",
   "license": "ISC",
   "dependencies": {
-    "base": "^3.0.0",
-    "body-parser": "^1.20.2",
-    "db-migrate": "^0.11.14",
-    "db-migrate-mysql": "^3.0.0",
-    "express": "^4.19.2",
-    "mysql": "^2.18.1",
-    "nodemon": "^3.1.4",
-    "uuid": "^10.0.0"
+    "base": "3.0.0",
+    "body-parser": "1.20.2",
+    "db-migrate": "0.11.14",
+    "db-migrate-mysql": "3.0.0",
+    "express": "4.19.2",
+    "mysql": "2.18.1",
+    "nodemon": "3.1.4",
+    "uuid": "10.0.0"
   },
   "keywords": [],
   "devDependencies": {
-    "rollup": "^4.21.2"
+    "rollup": "4.21.2"
   }
 }
